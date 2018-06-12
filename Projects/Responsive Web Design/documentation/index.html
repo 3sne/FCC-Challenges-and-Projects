@@ -12,17 +12,19 @@
 
 <body>
 	<nav id="navbar">
+		<header></header>
 		<div id="logo-cont">
             <div id="logo"></div>
         </div>
-        <a href="#Get_Started">Get Started with NPM</a><br>
-        <a href="#What_is_npm">What is npm?</a><br>
-        <a href="#Your_First_Package_Page">Your First Package Page</a><br>
-        <a href="#Installing_nodejs_And_npm">Installing nodejs and npm</a><br>
-        <a href="#Login_to_npm">Login to npm from a terminal</a><br>
-        <a href="#How_to_Install_Local_Packages">How to Install Local Packages</a><br>
-        <a href="#Using_the_Installed_Package_in_Your_Code">Using the Installed Package</a><br>
-        <a href="#What_next">What's next?</a><br>
+        <a href="#Get_Started" class="nav-link">Get Started with NPM</a><br>
+        <a href="#What_is_npm?" class="nav-link">What is npm?</a><br>
+        <a href="#Your_First_Package_Page" class="nav-link">Your First Package Page</a><br>
+        <a href="#Installing_nodejs_And_npm" class="nav-link">Installing nodejs and npm</a><br>
+        <a href="#Login_to_npm" class="nav-link">Login to npm from a terminal</a><br>
+		<a href="#How_to_Install_Local_Packages" class="nav-link">How to Install Local Packages</a><br>
+		<a href="#Installing_a_Package" class="nav-link">Installing a Package</a><br>
+        <a href="#Using_the_Installed_Package_in_Your_Code" class="nav-link">Using the Installed Package</a><br>
+        <a href="#What_Next?" class="nav-link">What's next?</a><br>
 		<button id="tsb">Theme</button>
 	</nav>
 	<main id="main-doc">
@@ -31,7 +33,7 @@
         </header>
         <hr>
 
-		<section id="What_is_npm" class="main-section">
+		<section id="What_is_npm?" class="main-section">
 			<header>
 				What is npm?
 			</header>
@@ -55,7 +57,7 @@
 						5 li here-->
 		</section>
 
-		<section id="Your_First_Package_Page">
+		<section id="Your_First_Package_Page" class="main-section">
 			<header>
 					Your First Package Page
 			</header>
@@ -70,9 +72,9 @@
 			</p>
 		</section>
 
-		<section id="Installing_nodejs_And_npm">
+		<section id="Installing_nodejs_And_npm" class="main-section">
 			<header>
-				Installing node.js and npm
+				Installing nodejs And npm
 			</header>
 			<ol>
 				<li>
@@ -100,8 +102,8 @@
 			</ol>
         </section>
 
-        <section id="Login_to_npm">
-            <header>Login to npm from a terminal</header>
+        <section id="Login_to_npm" class="main-section">
+            <header>Login to npm</header>
             <p>To test your new account, type: <br>
                 <code>npm login</code>
             </p>
@@ -111,7 +113,7 @@
             </p>
         </section>
 
-        <section id="How_to_Install_Local_Packages">
+        <section id="How_to_Install_Local_Packages" class="main-section">
             <header>How to Install Local Packages</header>
             <p>There are two ways to install npm packages: locally or globally. Choose which kind of installation to use based on how you want to use the package.</p>
             <ul>
@@ -120,7 +122,7 @@
             </ul>
         </section>
 
-        <section id="Installing_a_Package">
+        <section id="Installing_a_Package" class="main-section">
             <header>Installing a Package</header>
             <p>A package can be downloaded with the command:<br>
                 <code> npm install &lt;package_name></code>
@@ -128,7 +130,7 @@
             <p>To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed.</p>
         </section>
 
-        <section id="Using_the_Installed_Package_in_Your_Code">
+        <section id="Using_the_Installed_Package_in_Your_Code" class="main-section">
             <header>Using the Installed Package in Your Code</header>
             <p>Once the package is in node_modules, you can use it in your code. For example, if you are creating a Node.js module, you can<code>require it</code>.</p>
             <header style="font-size: 1.1em;">Example:</header>
@@ -142,8 +144,8 @@
             <p>Run the code using <code>node index.js</code>. It should output [2, 3].</p>
         </section>
 
-        <section id="What_next">
-            <header>What's Next?</header>
+        <section id="What_Next?" class="main-section">
+            <header>What Next?</header>
             <p>This concludes the introduction to npm. You can further learn about npm by visiting their <a href="https://docs.npmjs.com/getting-started/what-is-npm" target="_blank">official documentation</a>, from which all the information on this page is taken.</p>
         </section>
     </main>
