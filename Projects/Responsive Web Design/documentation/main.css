@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pri-color: white;
+    --sec-color: orange;
+    --pri-comp: black;
+    --font-color: rgba(0, 0, 0, 1);
+    --code-bg: rgba(200, 200, 200, 0.6);
+
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    height: 120px;
+    width: 100%;
+
+}
+
+#logo {
+    height: 100%;
+    width: 120px;
+    background-image: url(https://cldup.com/Rg6WLgqccB.svg);
+    background-repeat: no-repeat;
+}
+
+#Get_Started {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#navbar {
+    grid-area: navbar;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    margin-left: 15px;
+    width: 335px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 2;
+    color:inherit;
+}
+
+button {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 7px;
+    border: 1px solid var(--pri-comp);
+    background-color: var(--pri-color);
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--pri-comp);
+    color: var(--pri-color);
+}
+
+button:active {
+    background-color: var(--sec-color);
+}
+
+#main-doc {
+    grid-area: main-doc;
+}
+
+header {
+    margin-top: 10px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+p, li {
+    margin-left: 30px;
+    line-height: 32px;
+    font-size: 0.8em;
+}
+
+code {
+    background-color: var(--code-bg);
+    font-size: 0.75em;
+    font-family: monospace;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+#realFooter {
+    grid-area: foot;
+    text-align: center;
+    font-size: 0.55em;
+    line-height: 3;
+    background-color: var(--sec-color);
+}
+
+body {
+    display: grid;
+    color: var(--pri-comp);
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: auto 40px;
+    grid-template-areas: "navbar main-doc"
+                        "foot foot" ;
+    grid-gap: 25px;
+}
+
+@media (max-width: 620px) {
+    #Get_Started {
+        font-size: 2em;
+    }
+
+    header {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    p, li {
+        font-size: 0.7em;
+    }
+
+    #navbar {
+        position: inherit;
+        text-align: center;
+        line-height: 0;
+        width: 100%;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "navbar"
+                            "main-doc"
+                            "foot";
+    }
+
+    #realFooter {
+        font-size: 0.45em;
+        line-height: 1.1;
+        background-color: var(--sec-color);
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:300,400" rel="stylesheet">
+</head>
+<body>
+    <div id="tile"></div>
+    <div id="wrapper">
+    <h1 id="title" class="format-gc">Survey Form</h1>
+    <p id="description" class="format-gc">Help us improve our services for you.</p>
+    <form id="survey-form" class="format-gc" method="POST">
+        <label id="name-label" class="format-gc">Name: </label>
+        <input type="text" id="name" class="format-gc" placeholder="Enter your full name" required><br>
+
+        <label id="email-label" class="format-gc">E-mail: </label>
+        <input type="email" id="email" class="format-gc" placeholder="xyz@abc.com" required><br>
+
+        <label id="number-label" class="format-gc">Age: </label>
+        <input type="number" id="number" min="13" max="65" class="format-gc" placeholder="between 13 and 65" required><br>
+
+        <label id="dropdown-label" class="format-gc">How long have you been using our services?</label>
+        <select id="dropdown" class="format-gc">
+            <option>less than 3 months</option>
+            <option>between 3 and 12 months</option>
+            <option>more than a year</option>
+        </select><br>
+
+        <label id="radio-label" class="format-gc">Would you recommend us to your friend?</label>
+        <div id="radio" class="format-gc">
+            <input type="radio" name="radios" checked> Definitely
+            <input type="radio" name="radios"> Most Likely
+            <input type="radio" name="radios"> Maybe
+            <input type="radio" name="radios"> Nope
+        </div>
+
+        <label id="checkbox-label" class="format-gc">How do we help you?</label>
+        <div id="checkbox" class="format-gc">
+            <input type="checkbox" name="lodha" value="checkA"> Daily Scheduling<br>
+            <input type="checkbox" name="lodha" value="checkB"> Reminders<br>
+            <input type="checkbox" name="lodha" value="checkC"> Inspiration Quotes<br>
+            <input type="checkbox" name="lodha" value="checkD"> Expense Tracking<br>
+            <input type="checkbox" name="lodha" value="checkE"> More!<br>
+
+
+        </div>
+        <label id="ta-label"  class="format-gc" >Help us out: </label>
+        <textarea id="ta" class="format-gc" name="feedback" placeholder="Comments"></textarea><br>
+        <input type="submit" id="submit" class="format-gc" value="Submit">
+    </form>
+    </div>
+</body>
+</html>

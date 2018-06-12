@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Getting Started with NPM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="navbar">
+		<div id="logo-cont">
+            <div id="logo"></div>
+        </div>
+        <a href="#Get_Started">Get Started with NPM</a><br>
+        <a href="#What_is_npm">What is npm?</a><br>
+        <a href="#Your_First_Package_Page">Your First Package Page</a><br>
+        <a href="#Installing_nodejs_And_npm">Installing nodejs and npm</a><br>
+        <a href="#Login_to_npm">Login to npm from a terminal</a><br>
+        <a href="#How_to_Install_Local_Packages">How to Install Local Packages</a><br>
+        <a href="#Using_the_Installed_Package_in_Your_Code">Using the Installed Package</a><br>
+        <a href="#What_next">What's next?</a><br>
+		<button id="tsb">Theme</button>
+	</nav>
+	<main id="main-doc">
+		<header id="Get_Started">
+			Get Started with NPM.
+        </header>
+        <hr>
+
+		<section id="What_is_npm" class="main-section">
+			<header>
+				What is npm?
+			</header>
+			<p>
+					npm opens up an entire world of JavaScript talent for you and your team. It's the world's largest software registry, with approximately 3 billion downloads per week. The registry contains over 600,000 packages (building blocks of code). Open-source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.
+			</p>
+			<p>
+					npm consists of three distinct components:
+					<ul>
+						<li>the website</li>
+						<p>Use the website to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up Orgs (organizations) to manage access to public or private packages.</p>
+						<li>the Command Line Interface (CLI)</li>
+						<p>The CLI runs from a terminal. This is how most developers interact with npm.</p>
+						<li>the registry</li>
+						<p>The registry is a large public database of JavaScript software and the meta-information surrounding it.</p>
+					</ul>
+			</p>
+			<!--Overall, across all sections:
+						10 p here
+						5 code here
+						5 li here-->
+		</section>
+
+		<section id="Your_First_Package_Page">
+			<header>
+					Your First Package Page
+			</header>
+			<p>
+					First, you create an npm account, which is explained in the next chapter. You will then have you own page on npmjs.com, which will be http://www.npmjs.com/~yourusername.
+			</p>
+			<p>
+					As you publish packages, they will appear on your page. You can add organizations to invite others to work with you.
+			</p>
+			<p>
+				After you set up an npm account, the next step is to use the commmand line interface (CLI) to install npm. We look forward to seeing what you create!
+			</p>
+		</section>
+
+		<section id="Installing_nodejs_And_npm">
+			<header>
+				Installing node.js and npm
+			</header>
+			<ol>
+				<li>
+						Install Node.js & npm
+				</li>
+				<p>
+					Use one of the installers from the Node.js download page. Be sure to install the version labeled LTS. Other versions have not yet been tested with npm.
+				</p>
+				<li>
+						Test your installation
+				</li>
+				<p>
+					After installing, run<br>
+                    <code>node -v</code>
+                </p>
+				<p>
+					The version should be v8.9.1 or higher.
+				</p>
+				<li>
+						Update npm
+				</li>
+				<p>To be sure that this matches the latest version, scroll to the bottom of this page. If the version you see does not match the latest version, run:<br>
+				<code>npm install npm@latest -g</code></p>
+				<p>This will install the latest official, tested version of npm.</p>
+			</ol>
+        </section>
+
+        <section id="Login_to_npm">
+            <header>Login to npm from a terminal</header>
+            <p>To test your new account, type: <br>
+                <code>npm login</code>
+            </p>
+            <p>You will be promted for your username, password, and email. Be sure to spell your username exactly the same way as you entered it on the website, or you will create a new account.</p>
+            <p>To test that you have successfully logged in, type<br>
+            <code>npm whoami</code>
+            </p>
+        </section>
+
+        <section id="How_to_Install_Local_Packages">
+            <header>How to Install Local Packages</header>
+            <p>There are two ways to install npm packages: locally or globally. Choose which kind of installation to use based on how you want to use the package.</p>
+            <ul>
+                <li>If you want to depend on the package from your own module, using something like Node.js' <code>require</code>, then you want to install locally. This is <code>npm install's</code> default behavior.</li>
+                <li>f you want to use a package as a command line tool, (such as grunt CLI), then install it globally.</li>
+            </ul>
+        </section>
+
+        <section id="Installing_a_Package">
+            <header>Installing a Package</header>
+            <p>A package can be downloaded with the command:<br>
+                <code> npm install &lt;package_name></code>
+            </p>
+            <p>To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed.</p>
+        </section>
+
+        <section id="Using_the_Installed_Package_in_Your_Code">
+            <header>Using the Installed Package in Your Code</header>
+            <p>Once the package is in node_modules, you can use it in your code. For example, if you are creating a Node.js module, you can<code>require it</code>.</p>
+            <header style="font-size: 1.1em;">Example:</header>
+            <p>Create a file named index.js, with the following code:<br>
+                <code>
+                        var lodash = require('lodash');
+                        var output = lodash.without([1, 2, 3], 1);
+                        console.log(output);
+                </code>
+            </p>
+            <p>Run the code using <code>node index.js</code>. It should output [2, 3].</p>
+        </section>
+
+        <section id="What_next">
+            <header>What's Next?</header>
+            <p>This concludes the introduction to npm. You can further learn about npm by visiting their <a href="https://docs.npmjs.com/getting-started/what-is-npm" target="_blank">official documentation</a>, from which all the information on this page is taken.</p>
+        </section>
+    </main>
+    <footer id="realFooter">
+        This webpage was designed as a project for FreeCodeCamp Curriculum. I do not, in any way, assume responsibility for the accuracy of the data presented. Also, npm(Node Package Manager) and its logo belong their rightful owners. I own nothing :)
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
