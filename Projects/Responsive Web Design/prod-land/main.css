@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    height: 60px;
+    max-height: 120px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    background: orange;
+}
+
+    #header-img {
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    #nav-bar {
+        height: 100%;
+        margin-right: 20px;
+    }
+
+    .nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 1.8em;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .nav-li {
+        float: right;
+    }
+
+    .nav-li, .nav-link {
+        display: block;
+        height: 100%;
+        padding: 5px;
+        text-align: center;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .nav-li:hover {
+        background-color: sandybrown;
+    }
+
+#home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+    .home-item {
+        width: 50%;
+        margin: 30px;
+        text-align: center;
+    }
+
+/* #style-div {
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+} */
+
+
+#form-cont {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://cdn.wallpapersafari.com/97/80/WE8gdS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #email {
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        transition: all 0.7s ease
+    }
+
+    #email:focus {
+        width: 60%;
+    }
+
+    #submit {
+        width: 104px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+#video-cont{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing-cont {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #136a8a, #267871);
+}
+
+    .price-card {
+        min-height: 460px;
+        width: 280px;
+        margin: 25px;
+        padding: 5px;
+        background: rgba(245, 245, 245, 1);
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+        .price-header {
+            font-weight: 400;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .price-ul {
+            line-height: 1.5;
+            margin-left: 15px;
+            list-style-type: none;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        .price-p {
+            margin: 5px;
+            text-align: center;
+            position: relative;
+        }
+
+#footer-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.7em;
+    background-color: orange;
+}
+
+@media (max-width: 620px) {
+    #header {
+        height: 200px;
+        flex-direction: column;
+    }
+
+    #header-img {
+        height: 40px;
+
+    }
+
+
+
+    .nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 1.8em;
+        text-align: center;
+        flex-grow: 1;
+    }
+/*
+    .nav-li {
+        float: right;
+    } */
+
+    .nav-li, .nav-link {
+        padding: 5px;
+        text-align: center;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .nav-li:hover {
+        background-color: sandybrown;
+    }
+
+    #pricing-cont {
+        flex-direction: column;
+    }
+}
+
